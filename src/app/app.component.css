@@ -1,0 +1,72 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.dark{
+    color: darkgreen;
+}
+.light{
+    color:green;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn{
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+
+.text-posts{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display:flex;
+    width: 80%;
+    display: block;
+    text-align: center;
+}
+.pos{
+    position: relative;
+    left:  90px;
+}
+.banner {
+    width: 100%;
+    background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+    height: 100px;
+    text-align: center;
+    color: cornsilk;
+    text-transform: uppercase;
+    background-color: purple;
+    background-position: center;
+  }
+
+  .card {
+    margin: 50px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}

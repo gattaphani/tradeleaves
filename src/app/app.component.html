@@ -1,0 +1,113 @@
+<nav>
+  <div class="logo"> 
+    <h4><span class="dark">trade</span><span class="light">leaves</span></h4>
+  </div>
+  <ul class="nav-links">
+    <li><a class="btn" href="#">Place an ad</a></li>
+    <li><a href="#">Buyer Inquiries</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Pricing</a></li>
+  </ul>
+</nav>
+
+
+ <div class="banner">
+  <h2>suyog enterprises</h2>
+  <p>verified supplier</p>
+</div>
+
+<div class="container">
+<h4>Showing all products</h4>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Add Product
+</button>
+</div>
+
+<!--<table class="table table-bordered">
+  <tr>
+    <th>
+      EmpId
+    </th>
+  </tr>
+  <tr *ngFor = "let e of posts">
+    <td *ngFor = "let p of e">{{e.productName}}</td>
+
+  </tr>
+  
+</table>-->
+<!--<div class="pos">
+<div [class]="sucesspost">
+<div *ngFor = "let e of posts">
+  <p> productName:{{e.productName}}</p>
+  <p>attributes.Material:{{e.attributes.Material}}</p>
+  <p>attributes.Color:{{e.attributes.Color}}</p>
+  <p>attributes.Brand:{{e.attributes.Brand}}</p>
+  <p>image:{{e.image}}</p>
+  <p>minOrders:{{e.minOrders}}</p>
+  <p>deliveryTime:{{e.deliveryTime}}</p>
+  <p>location:{{e.location}}</p>
+  <p>productRating:{{e.productRating}}</p>
+  <p>productPrice:{{e.productPrice}}</p>
+</div>
+</div>
+</div>-->
+
+
+<div class="card" [ngStyle]="{'background-color':'green'}" *ngFor = "let e of posts">
+  <div class="container">
+  <div class="card-body">
+   
+      <div class="row">
+        <div class="col-md-4">
+            <img class="image" src="{{e.image}}" alt="Image" height="200px" width="200px"/>
+        </div>
+        <div class="col-md-8">
+    <p> productName:{{e.productName}}</p>
+    <p>attributes.Material:{{e.attributes.Material}}</p>
+    <p>attributes.Color:{{e.attributes.Color}}</p>
+    <p>attributes.Brand:{{e.attributes.Brand}}</p>
+    <p>minOrders:{{e.minOrders}}</p>
+    <p>deliveryTime:{{e.deliveryTime}}</p>
+    <p>location:{{e.location}}</p>
+    <p>productRating:{{e.productRating}}</p>
+    <p>productPrice:{{e.productPrice}}</p>
+   </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="container">
+  
+  
+  
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<router-outlet></router-outlet>
